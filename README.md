@@ -17,3 +17,25 @@ The sample is developed through the branches:
 |--|--|
 |[1-basic-app-with-api](https://github.com/azure-samples/js-e2e-static-web-app-with-cli/tree/1-basic-app-with-api)|Simple React app with simple `/api/hello` endpoint.|
 |[2-basic-app-with-api-and-auth](https://github.com/Azure-Samples/js-e2e-static-web-app-with-cli/tree/2-basic-app-with-api-and-auth)|Added _easy_ authentication to React app. Authentication providers include Microsoft Active Directory, Twitter, and GitHub.|
+
+
+
+## cli
+```
+az staticwebapp create \
+    --subscription "Azure subscription 1" \
+    --resource-group RG1forTutorial \
+    --name oizhaolei-js-e2e-staticwebapp-with-api \
+    --source https://github.com/oizhaolei/js-e2e-static-web-app-with-cli \
+    --token ghp_JFTdtxxxxxxxxxxxxxxGN1LReQm \
+    --location eastasia \
+    --branch main \
+    --app-location "app" \
+    --output-location "build"
+```
+```
+az staticwebapp delete \
+    --subscription "Azure subscription 1" \
+    --resource-group RG1forTutorial \
+    --name oizhaolei-js-e2e-staticwebapp-with-api
+```
